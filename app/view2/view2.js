@@ -9,6 +9,7 @@ angular.module('myApp.view2', ['ngRoute'])
   });
 }])
 
-.controller('View2Ctrl', [function() {
-
+.controller('View2Ctrl', ['$rootScope', function($rootScope) {
+	var view2 = this;
+	$rootScope.principal = false;
 }]);
